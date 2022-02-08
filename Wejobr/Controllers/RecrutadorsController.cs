@@ -24,6 +24,11 @@ namespace Wejobr.Controllers
             return View(await _context.recrutadores.ToListAsync());
         }
 
+        public async Task<IActionResult> IndexAdmin()
+        {
+            return View(await _context.recrutadores.ToListAsync());
+        }
+
         // GET: Recrutadors/Details/5
         public async Task<IActionResult> Details(int? id)
         {

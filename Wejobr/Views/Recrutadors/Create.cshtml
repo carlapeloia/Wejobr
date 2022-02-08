@@ -1,92 +1,140 @@
 ﻿@model Wejobr.Models.Recrutador
 
-<link rel="stylesheet" href="~/css/recrutador.css">
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/NavFooter.css">
+<link rel="stylesheet" href="~/css/vagas.css">
+
 
 @{
     ViewData["Title"] = "Cadastro de Recrutador";
 }
 
-<main class="container pt-4">
-    <section class="container-fluid" id="recrutSection1">
-        <h2>Cadastro de Recrutador</h2>
+<h4 class="mt-3 ml-3">CADASTRAR RECRUTADOR</h4>
 
-<hr />
 
-<form asp-action="Create" class="container d-flex flex-column justify-content-center mt-3 mb-4 p-3 border border-light shadow-sm bg-light rounded">
-  <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label asp-for="Nome_recrutador" class="control-label">Nome do recrutador</label>
-      <input asp-for="Nome_recrutador" class="form-control" placeholder="Informe o nome completo" />
-      <span asp-validation-for="Nome_recrutador" class="text-danger"></span>
-    </div>
-    <div class="col-md-6 mb-3">
-      <label asp-for="Email_recrutador" class="control-label">E-mail comercial</label>
-      <input type="email" asp-for="Email_recrutador" class="form-control" aria-describedby="emailHelp" placeholder="nome@empresa.com" />
-      <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email com ninguém.</small>
-      <span asp-validation-for="Email_recrutador" class="text-danger"></span>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="col-md-4 mb-3">
-      <label asp-for="Tel_recrutador" class="control-label">Telefone</label>
-      <input asp-for="Tel_recrutador" class="form-control" placeholder="Seu número comercial" />
-      <span asp-validation-for="Tel_recrutador" class="text-danger"></span>
-    </div>
-    <div class="col-md-4 mb-3">
-      <label asp-for="Contato2_recrutador" class="control-label">Telefone 2</label>
-      <input asp-for="Contato2_recrutador" class="form-control" placeholder="Seu número de celular" />
-      <span asp-validation-for="Contato2_recrutador" class="text-danger"></span>
-    </div>
-    <div class="col-md-4 mb-3">
-      <label asp-for="Senha_recrutador" class="control-label">Senha</label>
-      <input type="password" asp-for="Senha_recrutador" class="form-control" aria-describedby="passwordHelp" placeholder="Senha" />
-      <small id="passwordHelp" class="form-text text-muted">Deve ter de 8 a 20 caracteres e ser alfanumérico com caractere especial</small>
-      <span asp-validation-for="Senha_recrutador" class="text-danger"></span>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-        <label asp-for="Nome_empresa" class="control-label">Nome da empresa</label>
-        <input asp-for="Nome_empresa" class="form-control" placeholder="Nome da empresa representada" />
-        <span asp-validation-for="Nome_empresa" class="text-danger"></span>
-    </div>
-    <div class="col-md-6 mb-3">
-      <label asp-for="Id_empresa" class="control-label">Código identificador da empresa</label>
-      <input asp-for="Id_empresa" type="text" class="form-control" placeholder="ID da empresa">
-      <span asp-validation-for="Id_empresa" class="text-danger"></span>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-        <label asp-for="Departamento_recrutador" class="control-label">Departamento</label>
-        <input asp-for="Departamento_recrutador" class="form-control" placeholder="Nome do departamento do recrutador" />
-        <span asp-validation-for="Departamento_recrutador" class="text-danger"></span>
-    </div>
-    <div class="col-md-6 mb-3">
-      <label asp-for="Cargo_recrutador" class="control-label">Cargo</label>
-      <input asp-for="Cargo_recrutador" class="form-control" placeholder="Cargo do recrutador" />
-      <span asp-validation-for="Cargo_recrutador" class="text-danger"></span>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
-      <label class="form-check-label" for="invalidCheck3">
-        Concordo com os termos e condições
-      </label>
-      <div class="invalid-feedback">
-        Você deve concordar, antes de continuar.
-      </div>
-    </div>
-  </div>
-  <button class="btn btnVaga" type="submit">Cadastrar recrutador</button>
-  <a asp-action="Index" class="btn btnFechar" type="button" >Voltar para painel</a>
-</form>
+<div class="container justify-content-center mt-3 p-4 border border-light shadow-sm bg-light rounded">
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group row">
+            <label asp-for="Nome_recrutador" class="col-sm-2 col-form-label">Nome do recrutador</label>
+            <div class="col-sm-7">
+                <input type="text" asp-for="Nome_recrutador" class="form-control bg-light">
+                <span asp-validation-for="Nome_recrutador" class="text-danger"></span>
+            </div>
+        </div>
 
-  </section>
-</main>
+        <div class="form-group row">
+            <label asp-for="Email_recrutador" class="col-sm-2 col-form-label">E-mail</label>
+            <div class="col-sm-7">
+                <input type="email" asp-for="Email_recrutador" class="form-control bg-light">
+                <span asp-validation-for="Email_recrutador" class="text-danger"></span>
+            </div>
+        </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+        <div class="form-group row">
+            <label asp-for="Tel_recrutador" class="col-sm-2 col-form-label">Telefone comercial</label>
+            <div class="col-sm-7">
+                <input type="text" asp-for="Tel_recrutador" class="form-control bg-light">
+                <span asp-validation-for="Tel_recrutador" class="text-danger"></span>
+            </div>
+        </div>
+
+
+
+        <div class="form-group row">
+            <label asp-for="Contato2_recrutador" class="col-sm-2 col-form-label">Telefone celular</label>
+            <div class="col-sm-7">
+                <input type="text" asp-for="Contato2_recrutador" class="form-control bg-light">
+                <span asp-validation-for="Contato2_recrutador" class="text-danger"></span>
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <label asp-for="Senha_recrutador" class="col-sm-2 col-form-label">Senha</label>
+            <div class="col-sm-4">
+                <input type="password" asp-for="Senha_recrutador" class="form-control bg-light" id="inputPassword3">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Confirmar senha</label>
+            <div class="col-sm-4">
+                <input type="password" class="form-control bg-light" id="inputPassword3">
+            </div>
+        </div>
+
+
+
+        <div class="form-group row">
+            <label asp-for="Nome_empresa" class="col-sm-2 col-form-label">Empresa representada</label>
+            <div class="col-sm-7">
+                <input type="text" asp-for="Nome_empresa" class="form-control bg-light">
+                <span asp-validation-for="Nome_empresa" class="text-danger"></span>
+            </div>
+        </div>
+
+
+
+        <div class="form-group row">
+            <label asp-for="Id_empresa" class="col-sm-2 col-form-label">Código identificador da empresa</label>
+            <div class="col-sm-7">
+                <input type="text" asp-for="Id_empresa" class="form-control bg-light">
+                <span asp-validation-for="Id_empresa" class="text-danger"></span>
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <label asp-for="Departamento_recrutador" class="col-sm-2 col-form-label"> Departamento</label>
+            <div class="col-sm-7">
+                <input type="text" asp-for="Departamento_recrutador" class="form-control bg-light">
+                <span asp-validation-for="Departamento_recrutador" class="text-danger"></span>
+            </div>
+        </div>
+
+
+
+        <div class="form-group row">
+            <label asp-for="Cargo_recrutador" class="col-sm-2 col-form-label">Cargo</label>
+            <div class="col-sm-7">
+                <input type="text" asp-for="Cargo_recrutador" class="form-control bg-light">
+                <span asp-validation-for="Cargo_recrutador" class="text-danger"></span>
+            </div>
+        </div>
+
+
+
+
+        <div class="form-check">
+            <input class="form-check-input bg-light" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+                Li e aceito os presentes Termos e Condições de Uso
+            </label>
+        </div>
+
+        <div class="btnConfirmar">
+            <button type="submit" value="Create" class="btn btnCadastrar my-2 my-sm-2 ml-2">Confirmar</button>
+            <a type="button" asp-area="" asp-controller="Home" asp-action="Admin" class="btn btnFechar">Voltar</a>
+        </div>
+
+    </form>
+</div>
+
+
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>

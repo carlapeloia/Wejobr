@@ -1,71 +1,72 @@
 ﻿@model Wejobr.Models.Recrutador
 
-<link rel="stylesheet" href="~/css/recrutador.css">
+
 
 @{
     ViewData["Title"] = "Deletar Cadastro de Recrutador";
 }
 
-<main class="container pt-4">
-    <section class="container-fluid" id="recrutSection1">
-        <h2>Deletar Cadastro de Recrutador</h2>
+<h3 class="mt-3 ml-3">Ao EXCLUIR o cadastro, os dados serão perdidos</h3>
+<hr />
+<div class="container justify-content-center mt-3 p-4 border border-light shadow-sm bg-light rounded">
 
-    <hr />
+    <dl class="row">
 
-<div class="container d-flex flex-column justify-content-center mt-3 mb-4 p-3 border border-light shadow-sm bg-light rounded">
-        <div class="container-fluid">
-         <div class="row">
-             <div class="col-md-6 ml-auto">
-                 <h6>Nome do recrutador</h6>
-                 <p>@Html.DisplayFor(model => model.Nome_recrutador)</p>
-             </div>
-             <div class="col-md-6 ml-auto">
-                 <h6>E-mail comercial</h6>
-                 <p>@Html.DisplayFor(model => model.Email_recrutador)</p>
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-md-4 ml-auto">
-                 <h6>Telefone</h6>
-                 <p>@Html.DisplayFor(model => model.Tel_recrutador)</p>
-             </div>
-             <div class="col-md-4 ml-auto">
-                 <h6>Telefone 2</h6>
-                 <p>@Html.DisplayFor(model => model.Contato2_recrutador)</p>
-             </div>
-             <div class="col-md-4 ml-auto">
-                 <h6>Senha</h6>
-                 <p>@Html.DisplayFor(model => model.Senha_recrutador)</p>
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-md-6 ml-auto">
-                 <h6>Nome da empresa</h6>
-                 <p>@Html.DisplayFor(model => model.Nome_empresa)</p>
-             </div>
-             <div class="col-md-6 ml-auto">
-                 <h6>Código identificador da empresa</h6>
-                 <p>@Html.DisplayFor(model => model.Id_empresa)</p>
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-md-6 ml-auto">
-                 <h6>Departamento</h6>
-                 <p>@Html.DisplayFor(model => model.Departamento_recrutador)</p>
-             </div>
-             <div class="col-md-6 ml-auto">
-                 <h6>Cargo</h6>
-                 <p>@Html.DisplayFor(model => model.Cargo_recrutador)</p>
-             </div>
-         </div>
-        </div>
-    
+        <dt class="col-sm-2">
+            Nome do recrutador
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nome_recrutador)
+        </dd>
+
+        <dt class="col-sm-2">
+            E-mail comercial
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email_recrutador)
+        </dd>
+
+        <dt class="col-sm-2">
+            Telefone comercial
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tel_recrutador)
+        </dd>
+
+        <dt class="col-sm-2">
+            Telefone celular
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Contato2_recrutador)
+        </dd>
+
+        <dt class="col-sm-2">
+            Empresa representada
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nome_empresa)
+        </dd>
+
+        <dt class="col-sm-2">
+            Departamento
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Departamento_recrutador)
+        </dd>
+
+        <dt class="col-sm-2">
+            Cargo
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Cargo_recrutador)
+        </dd>
+    </dl>
+
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id_recrutador" />
-        <button class="btn btnDeletar" type="submit">Deletar</button>
-        <button class="btn btnFechar" asp-action="Index">Voltar para painel</button>
+        <button type="submit" value="Excluir" class="btn btnDeletar2 my-2 my-sm-2 ml-2">Excluir</button>
+        <a class="btn btnFechar" asp-action="IndexAdmin">Voltar</a>
     </form>
+
 </div>
 
-    </section>
-</main>
