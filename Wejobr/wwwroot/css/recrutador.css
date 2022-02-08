@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/*------------------------------ CSS dos Cards das Vagas ------------------------------*/
+
+#recrutSection1 h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+#recrutSection1 h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.vagaCard {
+    /*border-radius: 20px;*/
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.vagaCard:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #F1F1F1;
+}
+
+.vagaCard h6{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btnVaga{                       /*<--- Usado tbm no Modal das Vagas ---- */
+    background-color: #2A2665;
+    color: white;
+    border-radius: 20px;
+}
+
+.btnVaga:hover{
+    background-color: transparent;
+    border-color: #2A2665;
+    color: #2A2665;
+    border-radius: 20px;
+}
+
+/*------------------------------ CSS do Modal das Vagas ------------------------------*/
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    background-color: #F1F1F1;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.modal-header h5 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btnFechar {
+    background-color: #606060;
+    color: white;
+    border-radius: 20px;
+}
+
+.btnFechar:hover {
+    background-color: transparent;
+    color: #606060;
+    border-color: #606060;
+}
+
+/*------------------------------ CSS Views Vagas ------------------------------*/
+
+.btnDeletar {
+    background-color: #812020;
+    color: white;
+    border-radius: 20px;
+}
+
+.btnDeletar:hover {
+    background-color: transparent;
+    color: #ff0000;
+    border-color: #ff0000;
+}

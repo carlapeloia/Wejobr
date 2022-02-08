@@ -1,0 +1,83 @@
+﻿@model Wejobr.Models.Candidato
+
+    <link rel="stylesheet" href="candidato.css">
+    <link rel="stylesheet" href="~/css/NavFooter.css">
+    <link rel="stylesheet" href="~/css/vagas.css">
+
+    @{
+        ViewData["Title"] = "Delete";
+    }
+
+    <h3 class="mt-3">Ao EXCLUIR o cadastro, os dados serão perdidos</h3>
+    <hr/>
+    <div class="container justify-content-center mt-3 p-4 border border-light shadow-sm bg-light rounded">
+
+        <dl class="row">
+            <dt class="col-sm-2">
+                Nome completo
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Nome_candidato)
+            </dd>
+            <dt class="col-sm-2">
+                Nascimento
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Nascimento_candidato)
+            </dd>
+            <dt class="col-sm-2">
+                Estado civil
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Estado_civil_candidato)
+            </dd>
+            <dt class="col-sm-2">
+                Nacionalidade
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Nacionalidade_candidato)
+            </dd>
+            <dt class="col-sm-2">
+                RNE
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Rne_candidato)
+            </dd>
+            <dt class="col-sm-2">
+                Idioma
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Idioma_candidato)
+            </dd>
+            <dt class="col-sm-2">
+                E-mail
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Email_candidato)
+            </dd>
+           <dt class="col-sm-2">
+                Cargo1
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Cargo1_candidato)
+            </dd>
+            <dt class="col-sm-2">
+                Cargo2
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Cargo2_candidato)
+            </dd>
+            <dt class="col-sm-2">
+                Cargo3
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Cargo3_candidato)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id_candidato" />
+            <button type="submit" value="Excluir" class="btn btnDeletar2 my-2 my-sm-2 ml-2">Excluir</button>
+            <a class="btn btnFechar" asp-action="Index">Voltar</a>
+        </form>
+    </div>

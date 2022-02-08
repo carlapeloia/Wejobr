@@ -1,0 +1,42 @@
+﻿@model Wejobr.Models.Idioma
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Idioma</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome_idioma)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome_idioma)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nivel_leitura_idioma)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nivel_leitura_idioma)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nivel_escrita_idioma)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nivel_escrita_idioma)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nivel_conversacao_idioma)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nivel_conversacao_idioma)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id_idioma">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

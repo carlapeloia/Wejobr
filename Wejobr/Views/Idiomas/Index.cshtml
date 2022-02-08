@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Wejobr.Models.Idioma>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome_idioma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nivel_leitura_idioma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nivel_escrita_idioma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nivel_conversacao_idioma)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome_idioma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nivel_leitura_idioma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nivel_escrita_idioma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nivel_conversacao_idioma)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id_idioma">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id_idioma">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id_idioma">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

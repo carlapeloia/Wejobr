@@ -1,0 +1,147 @@
+﻿@model Wejobr.Models.Vaga
+
+<link rel="stylesheet" href="~/css/vagas.css">
+
+@{ ViewData["Title"] = "Detalhes da vaga"; }
+
+<main class="container pt-4">
+    <section class="container-fluid" id="vagasSection1">
+        <h3>Detalhes da vaga</h3>
+        <hr />
+        <div class="container d-flex flex-column justify-content-center mt-3 mb-4 p-3 border border-light shadow-sm bg-light rounded">
+
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 ml-auto">
+                        <h6>Cargo</h6>
+                        <p>@Html.DisplayFor(model => model.Cargo_vaga)</p>
+                    </div>
+                    <div class="col-md-6 ml-auto">
+                        <h6>Código da vaga</h6>
+                        <p>@Html.DisplayFor(model => model.Cod_vaga)</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ml-auto">
+                        <h6>Salário</h6>
+                        <p>R$ @Html.DisplayFor(model => model.Salario_vaga)</p>
+                    </div>
+                    <div class="col-md-6 ml-auto">
+                        <h6>Localidade</h6>
+                        <p>@Html.DisplayFor(model => model.Localidade_vaga)</p>
+                    </div>
+                </div>
+                <h6>Descrição da vaga</h6>
+                <p>@Html.DisplayFor(model => model.Descricao_vaga)</p>
+                <div class="row">
+                    <div class="col-md-6 ml-auto">
+                        <h6>Nível de instrução</h6>
+                        <p>@Html.DisplayFor(model => model.Nivel_instrucao_vaga)</p>
+                    </div>
+                    <div class="col-md-6 ml-auto">
+                        <h6>Vaga também direcionada à PCD?</h6>
+                        <p>@Html.DisplayFor(model => model.Vaga_pcd)</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ml-auto">
+                        <h6>Regime de contratação</h6>
+                        <p>@Html.DisplayFor(model => model.Regime_contratacao_vaga)</p>
+                    </div>
+                    <div class="col-md-6 ml-auto">
+                        <h6>ID da empresa</h6>
+                        <p>@Html.DisplayFor(model => model.Id_empresa)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a class="btn btnFechar" asp-action="IndexAdmin">Voltar</a>
+        </div>
+    </section>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+﻿@model Wejobr.Models.Empresa
+
+
+<h3 class="mt-3">Editar dados da empresa</h3>
+<hr/>
+<div class="row container  mt-3 p-4 border border-light shadow-sm bg-light rounded">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id_empresa" />
+            
+            <div class="form-group">
+                <label asp-for="Nome_empresa" class="control-label"></label>
+                <input asp-for="Nome_empresa" class="form-control" />
+                <span asp-validation-for="Nome_empresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cnpj_empresa" class="control-label"></label>
+                <input asp-for="Cnpj_empresa" class="form-control" />
+                <span asp-validation-for="Cnpj_empresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cep_empresa" class="control-label"></label>
+                <input asp-for="Cep_empresa" class="form-control" />
+                <span asp-validation-for="Cep_empresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ramo_empresa" class="control-label"></label>
+                <input asp-for="Ramo_empresa" class="form-control" />
+                <span asp-validation-for="Ramo_empresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefone_empresa" class="control-label"></label>
+                <input asp-for="Telefone_empresa" class="form-control" />
+                <span asp-validation-for="Telefone_empresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Linkedin_empresa" class="control-label"></label>
+                <input asp-for="Linkedin_empresa" class="form-control" />
+                <span asp-validation-for="Linkedin_empresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" value="Save" class="btn btnCadastrar my-2 my-sm-2 ml-2">Confirmar</button>
+                <a class="btn btnFechar" asp-controller="Empresas" asp-action="IndexAdmin">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

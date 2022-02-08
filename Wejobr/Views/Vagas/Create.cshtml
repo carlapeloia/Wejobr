@@ -1,0 +1,102 @@
+﻿@model Wejobr.Models.Vaga
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="~/css/site.css">
+  <link rel="stylesheet" href="~/css/NavFooter.css">
+  <link rel="stylesheet" href="~/css/vagas.css">
+
+@{ ViewData["Title"] = "Cadastro de Vagas"; }
+
+<main class="container pt-4">
+    <section class="container-fluid" id="vagasSection1">
+        <h2>Cadastro de Vagas</h2>
+
+        <hr />
+
+        <form class="container d-flex flex-column justify-content-center mt-3 mb-4 p-3 border border-light shadow-sm bg-light rounded" asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Cargo_vaga" class="control-label" for="validationServer1">Cargo</label>
+                    <input asp-for="Cargo_vaga" type="text" class="form-control" id="validationServer1" placeholder="Informe o nome da vaga" required>
+                    <span asp-validation-for="Cargo_vaga" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Salario_vaga" class="control-label" for="validationServer2">Salário</label>
+                    <input asp-for="Salario_vaga" type="text" class="form-control" id="validationServer2" placeholder="Salário" required>
+                    <span asp-validation-for="Salario_vaga" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label asp-for="Nivel_instrucao_vaga" class="control-label" for="validationServer3">Nível de instrução</label>
+                    <input asp-for="Nivel_instrucao_vaga" type="text" class="form-control" id="validationServer3" placeholder="Médio, Técnico, Superior..." required>
+                    <span asp-validation-for="Nivel_instrucao_vaga" class="text-danger"></span>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label asp-for="Regime_contratacao_vaga" class="control-label" for="validationServer4">Regime de contratação</label>
+                    <input asp-for="Regime_contratacao_vaga" type="text" class="form-control" id="validationServer4" placeholder="CLT, PJ, Freelance, Temporário..." required>
+                    <span asp-validation-for="Regime_contratacao_vaga" class="text-danger"></span>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label asp-for="Localidade_vaga" class="control-label" for="validationServer5">Localidade</label>
+                    <input asp-for="Localidade_vaga" type="text" class="form-control" id="validationServer5" placeholder="São Paulo - SP" required>
+                    <span asp-validation-for="Localidade_vaga" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Id_empresa" class="control-label">Código identificador da empresa</label>
+                    <input asp-for="Id_empresa" type="text" class="form-control" placeholder="ID da empresa">
+                    <span asp-validation-for="Id_empresa" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Vaga_pcd" class="form-select-label">Vaga também destinada à PCD?</label>
+                    <select asp-for="Vaga_pcd" class="custom-select" required>
+                        <option value="" disabled selected>Selecionar</option>
+                        <option value="true">Sim</option>
+                        <option value="false">Não</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Por favor, selecione uma opção válida.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-12 mb-3">
+                    <label asp-for="Descricao_vaga" class="control-label" for="validationTextarea">Descrição da vaga</label>
+                    <textarea asp-for="Descricao_vaga" class="form-control" id="validationTextarea" placeholder="Descreva aqui a vaga a ser cadastrada. Use até 500 caracteres." required></textarea>
+                    <span asp-validation-for="Descricao_vaga" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                    <label class="form-check-label" for="invalidCheck3">
+                        Concordo com os termos e condições
+                    </label>
+                    <div class="invalid-feedback">
+                        Você deve concordar, antes de continuar.
+                    </div>
+                </div>
+            </div>
+
+        </form>
+        <div>
+            <button class="btn btnCadastrar" type="submit">Confirmar</button>
+            <a class="btn btnFechar" asp-controller="Home" asp-action="Admin">Voltar</a>
+        </div>
+
+    </section>
+</main>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+

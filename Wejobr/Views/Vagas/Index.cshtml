@@ -1,0 +1,108 @@
+﻿@model IEnumerable<Wejobr.Models.Vaga>
+
+<link rel="stylesheet" href="~/css/vagas.css">
+<link rel="stylesheet" href="~/css/navFooter.css">
+
+@{ ViewData["Title"] = "Vagas";}
+
+<main class="container pt-4">
+    <section class="container-fluid" id="vagasSection1">
+        <h2>Vagas</h2>
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+<div class="col-sm-4 mb-5">
+    <div class="card vagaCard" style="width: 18rem;">
+        <div class="card-header">
+            <h6 class="card-title text-center mb-2">@Html.DisplayFor(modelItem => item.Cargo_vaga)</h6>
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                Nível: @Html.DisplayFor(modelItem => item.Nivel_instrucao_vaga)
+                <br>Salário: R$ @Html.DisplayFor(modelItem => item.Salario_vaga)
+                <br>Localidade: @Html.DisplayFor(modelItem => item.Localidade_vaga)
+                @*<br>Quantidade de vagas: 4*@
+                <br>Código da vaga: @Html.DisplayFor(modelItem => item.Cod_vaga)
+            </p>
+
+            <button type="button" class="btn btn-sm btn-block btnVaga" data-toggle="modal" data-target=".bd-example-modal-lg" data-whatever="@item.Cod_vaga">Ver detalhes da vaga</button>
+
+
+            
+
+
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content m-4">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Detalhes da vaga</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 ml-auto">
+                                        <h6>Cargo</h6>
+                                        <p>@Html.DisplayFor(modelItem => item.Cargo_vaga)</p>
+                                    </div>
+                                    <div class="col-md-6 ml-auto">
+                                        <h6>Código da vaga</h6>
+                                        <p>@Html.DisplayFor(modelItem => item.Cod_vaga)</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 ml-auto">
+                                        <h6>Salário</h6>
+                                        <p>R$ @Html.DisplayFor(modelItem => item.Salario_vaga)</p>
+                                    </div>
+                                    <div class="col-md-6 ml-auto">
+                                        <h6>Localidade</h6>
+                                        <p>@Html.DisplayFor(modelItem => item.Localidade_vaga)</p>
+                                    </div>
+                                </div>
+                                <h6>Descrição da vaga</h6>
+                                <p>@Html.DisplayFor(modelItem => item.Descricao_vaga)</p>
+                                <div class="row">
+                                    <div class="col-md-6 ml-auto">
+                                        <h6>Nível de instrução</h6>
+                                        <p>@Html.DisplayFor(modelItem => item.Nivel_instrucao_vaga)</p>
+                                    </div>
+                                    <div class="col-md-6 ml-auto">
+                                        <h6>Vaga também direcionada à PCD?</h6>
+                                        <p>@Html.DisplayFor(modelItem => item.Vaga_pcd)</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 ml-auto">
+                                        <h6>Regime de contratação</h6>
+                                        <p>@Html.DisplayFor(modelItem => item.Regime_contratacao_vaga)</p>
+                                    </div>
+                                    <div class="col-md-6 ml-auto">
+                                        <h6>ID da empresa</h6>
+                                        <p>@Html.DisplayFor(modelItem => item.Id_empresa)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btnFechar" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btnVaga">Candidatar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>}
+        </div>
+        <div class="container-fluid d-flex justify-content-center mt-5 pt-4 col-12">
+            <a href="#"><img src="~/css/Imagens/Banners Publicidade/AdChoices-DejotaTur-horiz.png"></a>
+        </div>
+    </section>
+
+    
+</main>
+
