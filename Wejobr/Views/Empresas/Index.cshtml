@@ -2,7 +2,7 @@
 
 @{
 
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Empresas";
 }
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
 
@@ -48,10 +48,10 @@
     <section class="container mt-3 mb-3">
         <div class="row justify-content-center">
             <div class="col-4">
-                <a asp-controller="Vagas" asp-action="Create" class="btn btnVagas" type="button" >Cadastrar vagas</a>
+                <a asp-controller="Vagas" asp-action="Create" class="btn btnCadastrar" type="button" >Cadastrar vagas</a>
                 </div>
             <div class="col-4">
-                <a asp-controller="" asp-action="" class="btn btnEntrar" type="button" >Buscar currículos</a>
+                <a asp-controller="Candidatoes" asp-action="Index" class="btn btnEntrar" type="button" >Buscar currículos</a>
                 </div>
             <div class="col-4">
                 <a asp-controller="Empresas" asp-action="Create" class="btn btnCadastrar" type="button" >Cadastrar sua empresa</a>
