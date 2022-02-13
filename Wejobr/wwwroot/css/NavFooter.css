@@ -13,11 +13,12 @@ nav li a {
 }
 
 .nav-link:hover {
-    color: #FBED21;
+    color: #006837;
     text-decoration: solid;
     text-decoration-line: underline;
-    text-decoration-color: #006837;
+    text-decoration-color: #FBED21;
     text-underline-offset: 8px;
+    transition: ease-in-out 0.3s;
 }
 
 .btnEntrar {
@@ -49,6 +50,7 @@ nav li a {
 }
 
 #idiomaDropdown:hover {
+    transition: ease-in-out 0.2s;
     color: #FBED21;
 }
 

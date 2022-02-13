@@ -7148,19 +7148,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Carla\\.nuget\\packages\\": {}
+    "C:\\Users\\Danilo J (Dejota)\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Carla\\Documents\\Recode\\Materias\\Wejobr\\Wejobr - Definitivo\\Wejobr\\Wejobr.csproj",
+      "projectUniqueName": "C:\\Users\\Danilo J (Dejota)\\Documents\\Recode\\Projeto Squad 22\\Entrega 3\\Wejobr\\Wejobr\\Wejobr.csproj",
       "projectName": "Wejobr",
-      "projectPath": "C:\\Users\\Carla\\Documents\\Recode\\Materias\\Wejobr\\Wejobr - Definitivo\\Wejobr\\Wejobr.csproj",
-      "packagesPath": "C:\\Users\\Carla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Carla\\Documents\\Recode\\Materias\\Wejobr\\Wejobr - Definitivo\\Wejobr\\obj\\",
+      "projectPath": "C:\\Users\\Danilo J (Dejota)\\Documents\\Recode\\Projeto Squad 22\\Entrega 3\\Wejobr\\Wejobr\\Wejobr.csproj",
+      "packagesPath": "C:\\Users\\Danilo J (Dejota)\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Danilo J (Dejota)\\Documents\\Recode\\Projeto Squad 22\\Entrega 3\\Wejobr\\Wejobr\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Carla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Danilo J (Dejota)\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7211,6 +7211,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.13, 5.0.13]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7219,7 +7225,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

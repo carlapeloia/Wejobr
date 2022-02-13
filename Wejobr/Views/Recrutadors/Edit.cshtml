@@ -1,10 +1,12 @@
 ﻿@model Wejobr.Models.Recrutador
 
+<link rel="stylesheet" href="~/css/recrutador.css">
+
 @{ ViewData["Title"] = "Editar cadastro de recrutador"; }
 
-
-
-<h3 class="mt-3 ml-3">Editar dados do recrutador</h3>
+<main class="container pt-4">
+   <section class="container-fluid" id="recrutSection1">
+<h2 class="mt-3 ml-3">Editar dados do recrutador</h2>
 
 <div class="row container m-auto mt-3 p-4 border border-light shadow-sm bg-light rounded">
     <div class="col-md-4">
@@ -61,6 +63,8 @@
     </div>
 
 </div>
+</section>
+</main>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -1,52 +1,40 @@
 ﻿@model IEnumerable<Wejobr.Models.Empresa>
 
-@{
-
-    ViewData["Title"] = "Empresas";
-}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-
 <link rel="stylesheet" href="~/css/empresas.css" />
+
 @{
 
+    ViewData["Title"] = "Área da Empresa";
 }
-<main>
-    <section class="container  mt-3">
-        <figure class="d-flex">
-            <figcaption class="ml-5 mr-4 mt-5 textoDestaqueEmpresa">
+
+<main class="container pt-4">
+    <section class="container-fluid" id="empresasSection1">
+       <h2 class="mt-3 ml-3">Área da Empresa</h2>
+       <hr />
+
+        <div class="row">
+            <div class="col-6">
                 <p class="text-right align-middle ml-5">
-                    Traga mais diversidade para o ambiente de trabalho da sua
-                    empesa,
-                    com
-                    pessoas que
-                    demostram alto grau de
-                    motivação com trajetórias, qualificações e experiências, que podem colaborar com o desempenho da
-                    sua
-                    empresa.
+                    Traga mais diversidade para o ambiente de trabalho da sua empesa, com pessoas que demostram alto grau de motivação com trajetórias, qualificações e experiências, que podem colaborar com o desempenho da sua empresa.
                 </p>
-            </figcaption>
-            <img class="sombra" src="~/css/imagens1/tabalhadores-3.jpg" width="301px" height="350px" alt="">
-
-        </figure>
-
-    </section>
-
-    <section class="container mt-3 pb-16 corFundo">
-        <figure class=" imagemFlutuante ">
-            <img class="sombra" src="~/css/imagens1/trabalahadores-1.jpg" width="526" height="318" alt="">
-        </figure>
-    </section>
-
-    <section class="container fundoImagemFlutuante">
-        <div class="container d-flex align-items-end">
-            <div class="container-fluid d-flex justify-content-center mt-5 pt-4 col-12">
-                <a class="mb-5" href="#"><img src="~/css/Imagens/Banners Publicidade/AdChoices-DejotaTur-horiz.png"></a>
+            </div>
+            <div class="col-4">
+                <img class="d-block w-100 rounded shadow-md" src="~/css/imagens1/tabalhadores-3.jpg" alt="">
             </div>
         </div>
-    </section>
 
-    <section class="container mt-3 mb-3">
-        <div class="row justify-content-center">
+        <div class="row container mt-3 pb-16">
+            <div class="col-5">
+                <img class="d-block w-100 rounded shadow-md" src="~/css/imagens1/trabalahadores-1.jpg" alt="">
+            </div>
+            <div class="col-4">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nulla, aliquam pariatur tenetur quia deserunt odio mollitia eveniet unde!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nulla, aliquam pariatur tenetur quia deserunt odio mollitia eveniet unde!</p>
+            </div>
+        </div>
+
+        <div class="container mt-4 mb-4">
+         <div class="row d-flex justify-content-center">
             <div class="col-4">
                 <a asp-controller="Vagas" asp-action="Create" class="btn btnCadastrar" type="button" >Cadastrar vagas</a>
                 </div>
@@ -56,84 +44,129 @@
             <div class="col-4">
                 <a asp-controller="Empresas" asp-action="Create" class="btn btnCadastrar" type="button" >Cadastrar sua empresa</a>
             </div>
+         </div>
         </div>
 
-    </section>
+        <hr />
 
-    <section class="container noticias">
-        <div>
-            <h2 class="tituloNoticias">Notícias</h2>
+        <div class="container-fluid d-flex justify-content-center pt-4 mt-4 mb-4">
+          <a href="#"><img class="d-block w-100" src="~/css/Imagens/Banners Publicidade/AdChoices-DejotaTur-horiz.png"></a>
         </div>
 
-        <div class="card-deck">
+    <div class="container mb-4">
+       <h2>Notícias</h2>
+       <hr />
 
+       <div id="carouselExampleControls" class="carousel slide mt-3" data-ride="carousel">
+        <div class="carousel-inner d-none d-md-block d-block d-md-none">
+         <div class="carousel-item row no-gutters active">
+
+          <div class="col-12 col-lg-4 col-sm-6 float-left px-3">    
+            <div class="card sombra mb-2">
+                <img class="card-img-top" src="~/css/Imagens/Header/pexels-ono-kosuki-6000175 - Copia.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <a href="https://revistapegn.globo.com/Administracao-de-empresas/noticia/2019/07/contratar-refugiados-pode-ser-um-bom-negocio-saiba-por-que.html">
+                    <h5 class="card-title cards-titulos-noticias">Contratar refugiados pode ser um bom negócio.</h5></a>
+                        <p class="card-text card-paragrafo-noticias">
+                            Todo refugiado — ou estrangeiro que formalizou o pedido de refúgio — tem assegurado o direito de trabalhar legalmente no Brasil. <br>
+                            Diante da chance de reconstruir a vida no país, eles costumam demonstrar alto grau de motivação e esforço para entrar no mercado — seja como empregado ou como empreendedor.
+                        </p>
+                    <a href="https://revistapegn.globo.com/Administracao-de-empresas/noticia/2019/07/contratar-refugiados-pode-ser-um-bom-negocio-saiba-por-que.html">
+                    <p class="card-text"><small class="text-muted">Saiba por quê</small></p></a>
+                </div>
+            </div>
+          </div>
+          
+          <div class="col-12 col-lg-4 col-sm-6 float-left px-3">    
             <div class="card sombra mb-2">
                 <img class="card-img-top" src="~/css/imagens1/ImagemNoticia.png" alt="Imagem de capa do card">
                 <div class="card-body">
-                    <h5 class="card-title cards-titulos-noticias">Contratar refugiados pode ser um bom negócio.</h5>
-                    <p class="card-text"><small class="text-muted">Saiba por quê</small></p>
                     <a href="https://revistapegn.globo.com/Administracao-de-empresas/noticia/2019/07/contratar-refugiados-pode-ser-um-bom-negocio-saiba-por-que.html">
+                    <h5 class="card-title cards-titulos-noticias">Contratar refugiados pode ser um bom negócio.</h5></a>
                         <p class="card-text card-paragrafo-noticias">
-                            Todo refugiado — ou estrangeiro que formalizou
-                            o pedido de refúgio —
-                            tem
-                            assegurado o direito de trabalhar legalmente no Brasil. <br>
-                            Diante da chance de reconstruir a vida no país, eles costumam demonstrar alto grau de
-                            motivação e esforço para entrar no mercado — seja como empregado ou como empreendedor.
+                            Todo refugiado — ou estrangeiro que formalizou o pedido de refúgio — tem assegurado o direito de trabalhar legalmente no Brasil. <br>
+                            Diante da chance de reconstruir a vida no país, eles costumam demonstrar alto grau de motivação e esforço para entrar no mercado — seja como empregado ou como empreendedor.
                         </p>
-                    </a>
-
-
+                    <a href="https://revistapegn.globo.com/Administracao-de-empresas/noticia/2019/07/contratar-refugiados-pode-ser-um-bom-negocio-saiba-por-que.html">
+                    <p class="card-text"><small class="text-muted">Saiba por quê</small></p></a>
                 </div>
             </div>
+          </div>
+
+          <div class="col-12 col-lg-4 col-sm-6 float-left px-3 d-none d-lg-block">    
+            <div class="card sombra mb-2">
+                <img class="card-img-top" src="~/css/Imagens/Header/immigration-people - Copia.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <a href="https://revistapegn.globo.com/Administracao-de-empresas/noticia/2019/07/contratar-refugiados-pode-ser-um-bom-negocio-saiba-por-que.html">
+                    <h5 class="card-title cards-titulos-noticias">Contratar refugiados pode ser um bom negócio.</h5></a>
+                        <p class="card-text card-paragrafo-noticias">
+                            Todo refugiado — ou estrangeiro que formalizou o pedido de refúgio — tem assegurado o direito de trabalhar legalmente no Brasil. <br>
+                            Diante da chance de reconstruir a vida no país, eles costumam demonstrar alto grau de motivação e esforço para entrar no mercado — seja como empregado ou como empreendedor.
+                        </p>
+                    <a href="https://revistapegn.globo.com/Administracao-de-empresas/noticia/2019/07/contratar-refugiados-pode-ser-um-bom-negocio-saiba-por-que.html">
+                    <p class="card-text"><small class="text-muted">Saiba por quê</small></p></a>
+                </div>
+            </div>
+          </div>
+         </div>
+
+         <div class="carousel-item row no-gutters">
+
+          <div class="col-12 col-lg-4 col-sm-6 float-left px-3">    
+            <div class="card sombra mb-2">
+                <img class="card-img-top" src="~/css/Imagens/Header/pexels-ono-kosuki-6000172 - Copia.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <a href="https://revistapegn.globo.com/Administracao-de-empresas/noticia/2019/07/contratar-refugiados-pode-ser-um-bom-negocio-saiba-por-que.html">
+                    <h5 class="card-title cards-titulos-noticias">Contratar refugiados pode ser um bom negócio.</h5></a>
+                        <p class="card-text card-paragrafo-noticias">
+                            Todo refugiado — ou estrangeiro que formalizou o pedido de refúgio — tem assegurado o direito de trabalhar legalmente no Brasil. <br>
+                            Diante da chance de reconstruir a vida no país, eles costumam demonstrar alto grau de motivação e esforço para entrar no mercado — seja como empregado ou como empreendedor.
+                        </p>
+                    <a href="https://revistapegn.globo.com/Administracao-de-empresas/noticia/2019/07/contratar-refugiados-pode-ser-um-bom-negocio-saiba-por-que.html">
+                    <p class="card-text"><small class="text-muted">Saiba por quê</small></p></a>
+                </div>
+            </div>
+          </div>
+          
+          <div class="col-12 col-lg-4 col-sm-6 float-left px-3">    
             <div class="card sombra mb-2">
                 <img class="card-img-top" src="~/css/imagens1/ImagemNoticia.png" alt="Imagem de capa do card">
                 <div class="card-body">
-                    <h5 class="card-title cards-titulos-noticias">
-                        Contratar refugiados pode ser um bom negócio.
-                    </h5>
-                    <p class="card-text"><small class="text-muted">Saiba por quê</small></p>
                     <a href="https://revistapegn.globo.com/Administracao-de-empresas/noticia/2019/07/contratar-refugiados-pode-ser-um-bom-negocio-saiba-por-que.html">
+                    <h5 class="card-title cards-titulos-noticias">Contratar refugiados pode ser um bom negócio.</h5></a>
                         <p class="card-text card-paragrafo-noticias">
-                            Todo refugiado — ou estrangeiro que formalizou
-                            o pedido de refúgio —
-                            tem
-                            assegurado o direito de trabalhar legalmente no Brasil. <br>
-                            Diante da chance de reconstruir a vida no país, eles costumam demonstrar alto grau de
-                            motivação e esforço para entrar no mercado — seja como empregado ou como empreendedor.
+                            Todo refugiado — ou estrangeiro que formalizou o pedido de refúgio — tem assegurado o direito de trabalhar legalmente no Brasil. <br>
+                            Diante da chance de reconstruir a vida no país, eles costumam demonstrar alto grau de motivação e esforço para entrar no mercado — seja como empregado ou como empreendedor.
                         </p>
-                    </a>
-
-
+                    <a href="https://revistapegn.globo.com/Administracao-de-empresas/noticia/2019/07/contratar-refugiados-pode-ser-um-bom-negocio-saiba-por-que.html">
+                    <p class="card-text"><small class="text-muted">Saiba por quê</small></p></a>
                 </div>
             </div>
+          </div>
+
+          <div class="col-12 col-lg-4 col-sm-6 float-left px-3 d-none d-lg-block">    
             <div class="card sombra mb-2">
-                <img class="card-img-top" src="~/css/imagens1/ImagemNoticia.png" alt="Imagem de capa do card">
+                <img class="card-img-top" src="~/css/Imagens/Header/immigration-people - Copia.jpg" alt="Imagem de capa do card">
                 <div class="card-body">
-                    <h5 class="card-title cards-titulos-noticias">
-                        Contratar refugiados pode ser um bom negócio.
-                    </h5>
-                    <p class="card-text"><small class="text-muted">Saiba por quê</small></p>
                     <a href="https://revistapegn.globo.com/Administracao-de-empresas/noticia/2019/07/contratar-refugiados-pode-ser-um-bom-negocio-saiba-por-que.html">
+                    <h5 class="card-title cards-titulos-noticias">Contratar refugiados pode ser um bom negócio.</h5></a>
                         <p class="card-text card-paragrafo-noticias">
-                            Todo refugiado — ou estrangeiro que
-                            formalizou o pedido de refúgio —
-                            tem
-                            assegurado o direito de trabalhar legalmente no Brasil. <br>
-                            Diante da chance de reconstruir a vida no país, eles costumam demonstrar alto grau de
-                            motivação e esforço para entrar no mercado — seja como empregado ou como empreendedor.
+                            Todo refugiado — ou estrangeiro que formalizou o pedido de refúgio — tem assegurado o direito de trabalhar legalmente no Brasil. <br>
+                            Diante da chance de reconstruir a vida no país, eles costumam demonstrar alto grau de motivação e esforço para entrar no mercado — seja como empregado ou como empreendedor.
                         </p>
-                    </a>
-
-
+                    <a href="https://revistapegn.globo.com/Administracao-de-empresas/noticia/2019/07/contratar-refugiados-pode-ser-um-bom-negocio-saiba-por-que.html">
+                    <p class="card-text"><small class="text-muted">Saiba por quê</small></p></a>
                 </div>
             </div>
-
+          </div>
+         </div>
         </div>
+       </div>
 
-    </section>
+        <hr />
+   </div>
 
-    <section class="container" id="homeSection1">
+   <section class="container" id="homeSection1">
     <h3>Parceiros</h3>
 
     <div id="carouselExampleControls" class="carousel slide mt-3" data-ride="carousel">
@@ -152,7 +185,7 @@
             <img class="d-block w-50" src="~/css/Imagens/Parceiros/SJMR-removebg-preview.png" alt="2">
           </div>
       </div>
-      
+
       <div class="carousel-item row no-gutters">
           <div class="col-3 float-left">    
             <img class="d-block w-50" src="~/css/Imagens/Parceiros/recodepro.png" alt="1">
@@ -166,9 +199,10 @@
           <div class="col-3 float-left">    
             <img class="d-block w-50" src="~/css/Imagens/Parceiros/SJMR-removebg-preview.png" alt="2">
           </div>
+     </div>
     </div>
-  </div>
-  </div>
+   </div>
+  </section>
+ 
 </section>
-
 </main>
