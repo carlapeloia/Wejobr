@@ -13,37 +13,39 @@
        <hr />
 
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
                 <p class="text-right align-middle ml-5">
                     Traga mais diversidade para o ambiente de trabalho da sua empesa, com pessoas que demostram alto grau de motivação com trajetórias, qualificações e experiências, que podem colaborar com o desempenho da sua empresa.
                 </p>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <img class="d-block w-100 rounded shadow-md" src="~/css/imagens1/tabalhadores-3.jpg" alt="">
             </div>
         </div>
 
-        <div class="row container mt-3 pb-16">
-            <div class="col-5">
+         <div class="row mt-3 pb-16">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nulla, aliquam pariatur tenetur quia deserunt odio mollitia eveniet unde!</p>
+         </div>
+
+        <div class="row mt-3 pb-16">
+            <div class="col-12 col-lg-5">
                 <img class="d-block w-100 rounded shadow-md" src="~/css/imagens1/trabalahadores-1.jpg" alt="">
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nulla, aliquam pariatur tenetur quia deserunt odio mollitia eveniet unde!</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nulla, aliquam pariatur tenetur quia deserunt odio mollitia eveniet unde!</p>
             </div>
         </div>
 
         <div class="container mt-4 mb-4">
-         <div class="row d-flex justify-content-center">
-            <div class="col-4">
-                <a asp-controller="Vagas" asp-action="Create" class="btn btnCadastrar" type="button" >Cadastrar vagas</a>
-                </div>
-            <div class="col-4">
-                <a asp-controller="Candidatoes" asp-action="Index" class="btn btnEntrar" type="button" >Buscar currículos</a>
-                </div>
-            <div class="col-4">
-                <a asp-controller="Empresas" asp-action="Create" class="btn btnCadastrar" type="button" >Cadastrar sua empresa</a>
-            </div>
+         <div class="row btnsEmp">
+            
+                <a class="col-5 col-md-4 col-lg-3 m-3 btn btnVaga" asp-controller="Vagas" asp-action="Create" type="button" >Cadastrar vagas</a>
+            
+                <a class="col-5 col-md-4 col-lg-3 m-3 btn btnEntrar" asp-controller="Candidatoes" asp-action="Index" type="button" >Buscar currículos</a>
+                
+                <a class="col-7 col-md-4 col-lg-3 m-3 btn btnCadastrar" asp-controller="Empresas" asp-action="Create" type="button" >Cadastrar sua empresa</a>
+
          </div>
         </div>
 

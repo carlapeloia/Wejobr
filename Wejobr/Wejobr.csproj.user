@@ -14,7 +14,8 @@
     <View_SelectedScaffolderID>RazorViewScaffolder</View_SelectedScaffolderID>
     <View_SelectedScaffolderCategoryPath>root/Common/MVC/View</View_SelectedScaffolderCategoryPath>
     <WebStackScaffolding_ViewDialogWidth>650,4</WebStackScaffolding_ViewDialogWidth>
-    <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
+    <ActiveDebugProfile>Wejobr</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\Danilo J %28Dejota%29\Documents\Recode\Projeto Squad 22\Entrega 3\Wejobr\Wejobr\Properties\PublishProfiles\Default Settings.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

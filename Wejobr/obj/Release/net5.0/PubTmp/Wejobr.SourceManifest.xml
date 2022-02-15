@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\Danilo J (Dejota)\Documents\Recode\Projeto Squad 22\Entrega 3\Wejobr\Wejobr\obj\Release\net5.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\Danilo J (Dejota)\Documents\Recode\Projeto Squad 22\Entrega 3\Wejobr\Wejobr\obj\Release\net5.0\PubTmp\EFSQLScripts\Wejobr.Models.Context.sql" />
+</sitemanifest>

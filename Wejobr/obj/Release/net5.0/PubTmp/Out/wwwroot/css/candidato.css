@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+#candSection1 h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.btnDeletar {
+    background-color: #812020;
+    color: white;
+    border-radius: 20px;
+}
+
+.btnDeletar:hover {
+    background-color: transparent;
+    color: #ff0000;
+    border-color: #ff0000;
+}
+
+.btnVaga{
+    background-color: #2A2665;
+    color: white;
+    border-radius: 20px;
+}
+
+.btnVaga:hover{
+    background-color: transparent;
+    border-color: #2A2665;
+    color: #2A2665;
+    border-radius: 20px;
+}

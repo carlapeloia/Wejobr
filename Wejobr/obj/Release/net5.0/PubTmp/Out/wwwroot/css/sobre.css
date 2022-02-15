@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* ----------------- CSS da página 'Sobre' (dentro das tags 'main' no HTML) -----------------  */
+
+#sobreSection1{
+    color: black;
+}
+
+#sobreSection1 h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+#sobreSection1 h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+.squad22 .row div{
+    text-align: center;
+}
+
+.squad22 img{
+    width: 30vh;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.212);
+}
+
+.squad22 h5{
+    font-family: 'Ubuntu', sans-serif;
+    /* font-weight: 300; */
+    margin-top: 5px;
+}
+
+.simbolo{
+    display: flex;
+    justify-content: center;
+}
