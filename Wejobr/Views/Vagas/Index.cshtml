@@ -9,10 +9,10 @@
     <section class="container-fluid" id="vagasSection1">
         <h2>Vagas</h2>
 
-        <div class="row">
+        <div class="row d-flex justify-content-around">
             @foreach (var item in Model)
             {
-<div class="col-sm-4 mb-5">
+<div class="col-12 col-lg-4 col-sm-6 mb-5">
     <div class="card vagaCard" style="width: 18rem;">
         <div class="card-header">
             <h6 class="card-title text-center mb-2">@Html.DisplayFor(modelItem => item.Cargo_vaga)</h6>
@@ -98,8 +98,8 @@
     </div>
 </div>}
         </div>
-        <div class="container-fluid d-flex justify-content-center mt-5 pt-4 col-12">
-            <a href="#"><img src="~/css/Imagens/Banners Publicidade/AdChoices-DejotaTur-horiz.png"></a>
+        <div class="container d-flex justify-content-center mt-5 pt-4">
+            <a href="#"><img class="d-block w-100" src="~/css/Imagens/Banners Publicidade/AdChoices-DejotaTur-horiz.png"></a>
         </div>
     </section>
 

@@ -27,7 +27,7 @@ namespace Wejobr
         {
             services.AddControllersWithViews();
             services.AddControllers();
-            services.AddDbContext<Context>(options => options.UseSqlServer("Data Source=DESKTOP-48BJ99I;Initial Catalog=Wejobr;Integrated Security=True"));
+            services.AddDbContext<Context>(options => options.UseSqlServer("Data Source=LAPTOP-0CJL33BR;Initial Catalog=Wejobr;Integrated Security=True"));
             //add-migration Banco
             //update-database
         }

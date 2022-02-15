@@ -31,14 +31,14 @@ body {
 /* ------------------ CSS do carrossel (páginas Home e Sobre) ------------------- */
 
 .carousel-inner{
-    height: 60vh;
+    /*height: 60vh;*/
     /* width: 90vh; */
 }
 
 .carousel-inner .carousel-caption{
     display: flex;
     /* align-content: center; */
-    padding-bottom: 30vh;
+    /*padding-bottom: 30vh;*/
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.63);
 }
 
@@ -89,3 +89,8 @@ body {
     color: #2A2665;
     border-color: #2A2665;
 }
+
+/*.vagasDtq {
+    display: flex;
+    justify-content: center;
+}*/

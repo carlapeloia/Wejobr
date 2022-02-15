@@ -1,14 +1,14 @@
 ﻿@model Wejobr.Models.Candidato
 
-    <link rel="stylesheet" href="candidato.css">
-    <link rel="stylesheet" href="~/css/NavFooter.css">
-    <link rel="stylesheet" href="~/css/vagas.css">
+    <link rel="stylesheet" href="~/css/candidato.css">
 
     @{
         ViewData["Title"] = "Excluir cadastro de candidato";
     }
 
-    <h3 class="mt-3 ml-3">Ao EXCLUIR o cadastro, os dados serão perdidos</h3>
+    <main class="container pt-4">
+    <section class="container-fluid" id="candSection1">
+    <h2 class="mt-3 ml-3">Ao EXCLUIR o cadastro, os dados serão perdidos</h2>
     <hr/>
     <div class="container justify-content-center mt-3 p-4 border border-light shadow-sm bg-light rounded">
 
@@ -77,7 +77,10 @@
 
         <form asp-action="Delete">
             <input type="hidden" asp-for="Id_candidato" />
-            <button type="submit" value="Excluir" class="btn btnDeletar2 my-2 my-sm-2 ml-2">Excluir</button>
+            <button type="submit" value="Excluir" class="btn btnDeletar my-2 my-sm-2 ml-2">Excluir</button>
             <a class="btn btnFechar" asp-action="Index">Voltar</a>
         </form>
     </div>
+
+    </section>
+    </main>
