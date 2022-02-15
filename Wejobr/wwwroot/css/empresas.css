@@ -49,7 +49,14 @@
     border-color: #ff0000;
 }
 
-.carrossel {
+.btnsEmp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*.carrossel {
     width: 100%;
     height: 0 auto;
-}
+}*/

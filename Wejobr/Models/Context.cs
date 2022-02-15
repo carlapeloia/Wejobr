@@ -10,7 +10,7 @@ namespace Wejobr.Models
     {
         public Context(DbContextOptions<Context> options) : base(options)
         {
-
+            //Database.EnsureCreated();
         }
         public DbSet<Candidato> candidatos { get; set; }
         public DbSet<Empresa> empresas { get; set; }

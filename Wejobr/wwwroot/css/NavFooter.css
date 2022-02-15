@@ -71,7 +71,8 @@ nav li a {
 }
 
 .navbar-collapse ul {
-    flex-direction: initial;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: center;
 }

@@ -27,7 +27,7 @@ namespace Wejobr
         {
             services.AddControllersWithViews();
             services.AddControllers();
-            services.AddDbContext<Context>(options => options.UseSqlServer("Data Source=LAPTOP-0CJL33BR;Initial Catalog=Wejobr;Integrated Security=True"));
+            services.AddDbContext<Context>(options => options.UseSqlServer("Data Source=SQL5097.site4now.net;Initial Catalog=db_a82f52_wejobr;User Id=db_a82f52_wejobr_admin;Password=Wejobr22"));
             //add-migration Banco
             //update-database
         }

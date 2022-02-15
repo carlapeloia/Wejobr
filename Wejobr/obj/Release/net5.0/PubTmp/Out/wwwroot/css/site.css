@@ -1,0 +1,96 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* ------------------ CSS do carrossel (páginas Home e Sobre) ------------------- */
+
+.carousel-inner{
+    /*height: 60vh;*/
+    /* width: 90vh; */
+}
+
+.carousel-inner .carousel-caption{
+    display: flex;
+    /* align-content: center; */
+    /*padding-bottom: 30vh;*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.63);
+}
+
+/* ------------------ CSS da página Home ------------------- */
+
+#homeSection1 h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+#homeSection1 h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+.parceirosCrsel {
+    height: 11vh;
+}
+
+.homeBtns{
+    display:flex;
+    justify-content:center;
+}
+
+.btnProcEmp {
+    background-color: #FBED21;
+    color: black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.btnProcEmp:hover {
+    background-color: transparent;
+    color: #FBED21;
+    border-color: #FBED21;
+}
+
+.btnContrat {
+    background-color: #2A2665;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.btnContrat:hover {
+    background-color: transparent;
+    color: #2A2665;
+    border-color: #2A2665;
+}
+
+/*.vagasDtq {
+    display: flex;
+    justify-content: center;
+}*/

@@ -1,0 +1,157 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* --------------------------- CSS da nova navbar ---------------------------  */
+
+nav li a {
+    font-weight: 600;
+    color: black;
+}
+
+.navbarcolor {
+    background-color: #F1F1F1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.nav-link:hover {
+    color: #006837;
+    text-decoration: solid;
+    text-decoration-line: underline;
+    text-decoration-color: #FBED21;
+    text-underline-offset: 8px;
+    transition: ease-in-out 0.3s;
+}
+
+.btnEntrar {
+    background-color: #FBED21;
+    color: black;
+    border-radius: 20px;
+}
+
+.btnEntrar:hover {
+    background-color: transparent;
+    color: #FBED21;
+    border-color: #FBED21;
+}
+
+.btnCadastrar {
+    background-color: #006837;
+    color: #F1F1F1;
+    border-radius: 20px;
+}
+
+.btnCadastrar:hover {
+    background-color: transparent;
+    color: #006837;
+    border-color: #006837;
+}
+
+#idiomaDropdown {
+    color: #2A2665;
+}
+
+#idiomaDropdown:hover {
+    transition: ease-in-out 0.2s;
+    color: #FBED21;
+}
+
+#idiomaDropStyle {
+    /*border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;*/
+    /* margin-top: 2vh; */
+    border-radius: 20px;
+}
+
+#idiomaDropStyle a:hover {
+    background-color: transparent;
+    color: #FBED21;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+.navbar-collapse ul {
+    flex-direction: initial;
+    list-style: none;
+    justify-content: center;
+}
+
+.navbar-collapse li a {
+    margin-right: 3vh;
+}
+
+.navbar-collapse form {
+    justify-content: center;
+}
+
+/* --------------------------- CSS do modal ---------------------------  */
+
+.modal-content {
+    border-radius: 30px;
+}
+
+.modalLogin {
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.modalLogin h5 {
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.modalLogin select {
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.modalLogin input {
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.modalLogin button {
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 20px;
+    width: 200px;
+}
+
+.btnFechar {                    /*<--- Usado tbm no Modal das Vagas ---- */
+    background-color: #606060;
+    color: white;
+    border-radius: 20px;
+}
+
+.btnFechar:hover {
+    background-color: transparent;
+    color: #606060;
+    border-color: #606060;
+}
+
+/* --------------------------- CSS da nova versão do footer ---------------------------  */
+
+footer {
+    background-color: #F1F1F1;
+}
+
+.footer1 {
+    margin-bottom: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+.footer1 h5 {
+    color: black;
+}

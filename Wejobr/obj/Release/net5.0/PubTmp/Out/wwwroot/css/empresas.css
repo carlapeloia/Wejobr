@@ -1,0 +1,55 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+#empresasSection1 h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    /*text-align: center;*/
+}
+
+#empresasSection1 h4, h5 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.sombra {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sombra img {
+    height: 40vh;
+}
+
+.sombra:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btnVaga{
+    background-color: #2A2665;
+    color: white;
+    border-radius: 20px;
+}
+
+.btnVaga:hover{
+    background-color: transparent;
+    border-color: #2A2665;
+    color: #2A2665;
+    border-radius: 20px;
+}
+
+.btnDeletar {
+    background-color: #812020;
+    color: white;
+    border-radius: 20px;
+}
+
+.btnDeletar:hover {
+    background-color: transparent;
+    color: #ff0000;
+    border-color: #ff0000;
+}
+
+.carrossel {
+    width: 100%;
+    height: 0 auto;
+}

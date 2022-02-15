@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAECh1ZMUTT0Cj4dr4LBRc9QAAAAACAAAAAAAQZgAAAAEAACAAAACrV8h78CKS6FZurD1KlZNwLHeQzZxUcYx6hSuehDX1OgAAAAAOgAAAAAIAACAAAADyajyDSJSMQQgD/j8j3UtI1ge57pDZwdWKM1XD/rtPYSAAAACp4NvX/vLXBGNW4F3y6ooODMQ0/Z+VIsVCSc3tFpD9b0AAAAA0ynFzRx1xlZM0M0Fh37R3ZjRaexkeSGmXcAHlO0UhKw/jp/FB5xcP5JSXT3I8iHVoOpqssIMUnEFHTFkFbqzu</EncryptedPassword>
+    <History>True|2022-02-15T18:38:15.9937009Z;False|2022-02-15T15:20:08.8097399-03:00;False|2022-02-15T15:08:48.2566042-03:00;False|2022-02-15T14:53:47.8153735-03:00;False|2022-02-15T14:49:39.7178981-03:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="Wejobr.Models.Context">
+      <Value>Data Source=SQL5097.site4now.net%3bInitial Catalog=db_a82f52_wejobr%3bUser Id=db_a82f52_wejobr_admin%3bPassword=Wejobr22</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
